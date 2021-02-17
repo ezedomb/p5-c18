@@ -9,6 +9,10 @@ boton.addEventListener('click', cargarCiudad)
 // Dentro de la función hacé un pedido AJAX ( $.getJSON) que traiga la información de la ciudad de Buenos Aires y 
 // la muestre en la consola.
 
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es", function(data) {
+    console.log(data)
+})
+
 window.addEventListener('keydown', (returnOrEnter) => { // para que ademas del click tambien funcione con el enter
         (returnOrEnter.key == 'Enter') ? cargarCiudad():{}
     })    
