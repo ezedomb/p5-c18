@@ -1,0 +1,18 @@
+body {
+    background-color: lime;
+    text-align: center;
+}
+
+#container {
+    align-content: center;
+}
+
+button {
+    color: magenta;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    border: 2px black dashed;
+}
